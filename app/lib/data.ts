@@ -88,6 +88,8 @@ const ITEMS_PER_PAGE = 10;
 export async function fetchFilteredInvoices(
   query: string,
   currentPage: number,
+  sortBy: string = 'date', // default sort by date
+  sortOrder: string = 'DESC' // defau
 ) {
   const offset = (currentPage - 1) * ITEMS_PER_PAGE;
 
